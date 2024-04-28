@@ -19,10 +19,12 @@ import {
 export const createTable = pgTableCreator((name) => `t3gallery_${name}`);
 
 export const posts = createTable(
-  "post",
+  "images",
   {
     id: serial("id").primaryKey(),
     name: varchar("name", { length: 256 }),
+    url: varchar("url", { length: 256 }),
+    userId: varchar("user_id", { length: 256 }),
     createdAt: timestamp("created_at")
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
