@@ -38,7 +38,7 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <body
           className={cn(
-            "min-h-screen flex flex-col font-sans antialiased",
+            "flex flex-col font-sans antialiased",
             fontSans.variable
           )}
         >
@@ -60,7 +60,7 @@ export default function RootLayout({
             <header className="top-0 w-full sticky z-50">
               <Topnav />
             </header>
-            <main className="flex flex-1 overflow-hidden">
+            <main className="flex flex-1 mx-auto overscroll-y-scroll">
               {children}
             </main>
             <Toaster />
