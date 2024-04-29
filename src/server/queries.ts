@@ -6,9 +6,7 @@ import { db } from "./db";
 export async function getImages() {
   const user = auth();
 
-  if (!user || !user.userId) {
-    throw new Error("Unauthorized");
-  }
+  if (!user || !user.userId) return [];
 
   return await db.query.images.findMany({
     where: (model, { eq }) => eq(model.userId, user.userId),
@@ -17,13 +15,7 @@ export async function getImages() {
 }
 
 export async function getImageById(imageId: number) {
-  const user = auth();
-
-  if (!user || !user.userId) {
-    throw new Error("Unauthorized");
-  }
-
   return await db.query.images.findFirst({
-    where: (model, { eq }) => eq(model.userId, user.userId) && eq(model.id, imageId)
+    where: (model, { eq }) => eq(model.id, imageId)
   })
 }
