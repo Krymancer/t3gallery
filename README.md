@@ -1,15 +1,33 @@
 # T3 Galery
 
-## TODO
+[Click here to see live site](https://t3gallery-six-livid.vercel.app/)
 
-- [ ] Make it deploy (/w vercel)
-- [ ] Scafold basic ui with mock data
-- [ ] Actually set up a database (w/ neon)
-- [ ] Attach database to ui
-- [ ] Add authentication (w/ clerk)
-- [ ] Add image upload (w/ uploadthing)
-- [ ] Error managment (w/ sentry)
-- [ ] Routing/image page (parallel route)
-- [ ] Delete button (w/ server actions)
-- [ ] Analytics (w/ posthog)
-- [ ] Ratelimiting (w/ upstash)
+## Overview
+
+This is a simple application to share images.
+
+- [x] Make it deploy (w/ vercel)
+- [x] Scafold basic ui with mock data
+- [x] Actually set up a database (w/ neon)
+- [x] Attach database to ui (w/ drizzle)
+- [x] Add authentication (w/ clerk)
+- [x] Add image upload (w/ uploadthing)
+- [x] Routing/image page (w/ parallel route)
+- [x] Delete button (w/ server actions)
+
+## Screenshots
+
+![Home Page](https://github.com/Krymancer/lingo-nextjs/blob/main/.github/screenshots/landing-page.png?raw=true)
+
+![Image Modal](https://github.com/Krymancer/lingo-nextjs/blob/main/.github/screenshots/learn-page.png?raw=true)
+
+## My process
+
+### Built with
+
+- NextJS
+- Shadcn-ui
+- @clerk
+- drizzle
+- neon
+- uploadthing
