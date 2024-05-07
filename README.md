@@ -17,9 +17,9 @@ This is a simple application to share images.
 
 ## Screenshots
 
-![Home Page](https://github.com/Krymancer/lingo-nextjs/blob/main/.github/screenshots/landing-page.png?raw=true)
+![Home Page](https://github.com/Krymancer/t3gallery/blob/main/.github/screenshots/home.png?raw=true)
 
-![Image Modal](https://github.com/Krymancer/lingo-nextjs/blob/main/.github/screenshots/learn-page.png?raw=true)
+![Image Modal](https://github.com/Krymancer/t3gallery/blob/main/.github/screenshots/modal.png?raw=true)
 
 ## My process
 
